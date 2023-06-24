@@ -1,0 +1,18 @@
+1. Window Object vs Document Object
+
+	i.	Browser having the home page which is a magical window 
+	  	through that we can surf is called the Window Object.
+	
+	ii.	It having special set of object helps in viewing the
+	  	document which having other set of objects.
+
+	iii.	The document of HTML web page viewed through the window 
+		object is called the Document object.
+
+	iv.	Through the Window object we can view various document 
+		object. The Document contains the content of the page.
+
+	v.	Window object has properties like browser history, 
+		location and the device’s screen etc.  	
+	
+	
