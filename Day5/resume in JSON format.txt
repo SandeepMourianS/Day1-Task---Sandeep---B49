@@ -1,0 +1,44 @@
+{
+  "name": "Sandeep Mourian S",
+  "title": "Software Engineer",
+  "contact": {
+    "email": "sandeepmourian10799@email.com",
+    "phone": "7566365369",
+    "address": "123 Main Street, Dindigul, Tamilnadu"
+  },
+  "summary": "Experienced software engineer with a strong background in full-stack development. Passionate about creating efficient and scalable solutions to complex problems. Skilled in multiple programming languages and frameworks.",
+  "education": [
+    {
+      "degree": "Bachelor of Engineering in Computer Science",
+      "university": "University of Madurai",
+      "year": "2017"
+    }
+  ],
+  "experience": [
+    {
+      "position": "Senior Software Engineer",
+      "company": "TCS",
+      "location": "Chennai",
+      "start_date": "2022-01",
+      "end_date": "2023-01",
+      "description": "Led a team of developers in designing and implementing new features for a web-based application. Developed and maintained backend APIs using Node.js and Express. Collaborated with frontend team to improve user experience and performance."
+    },
+    {
+      "position": "Software Engineer",
+      "company": "TCS",
+      "location": "Bangalore",
+      "start_date": "2023-02",
+      "end_date": "2023-06",
+      "description": "Developed and maintained web applications using HTML, CSS, and JavaScript. Implemented new features and fixed bugs reported by clients. Participated in code reviews and collaborated with team members to optimize application performance."
+    }
+  ],
+  "skills": [
+    "JavaScript",
+    "Node.js",
+    "React",
+    "HTML",
+    "CSS",
+    "SQL",
+    "Git"
+  ]
+}
