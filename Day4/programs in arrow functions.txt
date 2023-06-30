@@ -1,0 +1,64 @@
+Do the below programs in arrow functions.
+
+a) Print odd numbers in an array
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const printOddNumbers = arr => {
+  arr.forEach(num => {
+    if (num % 2 !== 0) {
+      console.log(num);
+    }
+  });
+};
+printOddNumbers(numbers);
+
+b) Convert all the strings to title caps in a string array
+
+const stringArray = ["hello", "world", "javascript"];
+const titleCaseArray = stringArray.map(str => str.charAt(0).toUpperCase() + str.slice(1).toLowerCase());
+console.log(titleCaseArray);
+
+c) Sum of all numbers in an array
+
+const numbers = [1, 2, 3, 4, 5];
+const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+console.log(sum); 
+
+d) Return all the prime numbers in an array
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const isPrime = num => {
+  for (let i = 2, sqrt = Math.sqrt(num); i <= sqrt; i++) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+  return num > 1;
+};
+const primeNumbers = numbers.filter(isPrime);
+console.log(primeNumbers);
+
+e) Return all the palindromes in an array
+
+const isPalindrome = str => {
+  const normalizedStr = str.toLowerCase().replace(/[^a-zA-Z0-9]/g, '');
+  const reversedStr = normalizedStr.split('').reverse().join('');
+  return normalizedStr === reversedStr;
+};
+const findPalindromes = arr => arr.filter(item => isPalindrome(item));
+const words = ['level', 'racecar', 'hello', 'madam', 'world'];
+const palindromes = findPalindromes(words);
+console.log(palindromes); 
+
+
+
+
+
+
+
+
+
+
+
+
+
