@@ -1,0 +1,57 @@
+a) Write a “person” class to hold all the details.
+
+class Person{
+    constructor(firstname,lastname,age,job){
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.age = age;
+        this.job = job;
+    }
+    
+    getFullname(){
+        return `${this.firstname} ${this.lastname}`;
+    }
+    getAge(){
+        return this.age;
+    }
+    getJob(){
+        return this.job;
+    }
+    setFirstname(){
+        this.firstname = firstname;
+    }
+    setLastname(){
+        this.lastname = lastname;
+    }
+    setAge(){
+        this.age = age;
+    }
+    setJob(){
+        this.job = job;
+    }
+}
+
+let objPerson = new Person("sandeep","mourian s",24,"developer");
+console.log(objPerson.getFullname());
+console.log(objPerson.getAge());
+console.log(objPerson.getJob());
+
+b) write a class to calculate the uber price.
+
+class UberPrice{
+    constructor(baseFair,fairPerKm,timingCharge){
+        this.baseFair = baseFair;
+        this.fairPerKm = fairPerKm;
+        this.timingCharge = timingCharge;
+    }
+    calculatePrice(Distance,Time){
+        const price = this.baseFair + (this.fairPerKm * Distance) + (this.timingCharge * Time);
+        return price;
+    }
+}
+let objUber = new UberPrice(1.5,2.5,1);
+let Distance = 5;
+let Time = 30;
+let Fare = objUber.calculatePrice(Distance,Time);
+console.log(`Uber Price is ${Fare}`);
+    
