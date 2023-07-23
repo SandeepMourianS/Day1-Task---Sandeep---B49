@@ -1,0 +1,55 @@
+#container{
+    width: 300px;
+    height: 350px;
+    color: color-mix(in hwb longer hue, color percentage, color percentage);
+    background-color: lightslategrey;
+    padding: 10px;
+    box-shadow: 3px 3px 3px 4px #888888;
+}
+
+body{
+    background-color: palegreen;
+}
+
+h1{
+    font-family: 'Caveat', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Norican', cursive;
+    font-family: 'VT323', monospace; 
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 2px;
+    max-width: 300px;
+  }
+
+button{
+    font-size: medium;
+    height: 40px;
+    background-color: lightslategray;
+    border: 1px;
+  }
+
+#equalto{
+    color: white;
+    background-color: blue;
+}
+
+#del{
+    color: red;
+}
+
+#display{
+    display: block;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 25px !important;
+    margin: 10px;
+    background-color: aliceblue;
+    text-align: end;
+    font-size: 24px;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Lexend+Deca:wght@700&family=Norican&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" type="text/css">
+</head>
+<body>
+    <center>
+    <h1>CALCULATOR</h1>
+    <div id="container">
+        <div id="display">0</div>
+            <div class="grid-container">
+                <button onclick="appendToDisplay('1')" id="one">1</button>
+                <button id="two" onclick="appendToDisplay('2')">2</button>
+                <button id="three" onclick="appendToDisplay('3')">3</button>
+                <button id="four" onclick="appendToDisplay('4')" style="grid-column: 1; grid-row: 2">4</button>
+                <button id="five" onclick="appendToDisplay('5')" style="grid-column: 2; grid-row: 2">5</button>
+                <button id="six" onclick="appendToDisplay('6')" style="grid-column: 3; grid-row: 2">6</button>
+                <button id="seven" onclick="appendToDisplay('7')" style="grid-column: 1; grid-row: 3">7</button>
+                <button id="eigth" onclick="appendToDisplay('8')" style="grid-column: 2; grid-row: 3">8</button>
+                <button id="nine"  onclick="appendToDisplay('9')" style="grid-column: 3; grid-row:3">9</button>
+                <button id="del" onclick="clearDisplay()" >C</button>
+                <button id="add" onclick="appendToDisplay('+')">+</button>
+                <button id="sub" onclick="appendToDisplay('-')">-</button>
+                <button id="mul" onclick="appendToDisplay('*')">x</button>
+                <button id="div" onclick="appendToDisplay('/')">/</button>
+                <button id="mod" onclick="appendToDisplay('%')">%</button>
+                <button id="zero" onclick="appendToDisplay('0')" style="grid-column: 2; grid-row:4">0</button>
+                <button id="twoZero" onclick="appendToDisplay('00')" style="grid-column: 1; grid-row:4">00</button>
+                <button id="threeZero" onclick="appendToDisplay('000')" style="grid-column: 3; grid-row:4">000</button>
+                <button id="equalto" onclick="calculate()" >=</button>
+                <button id="dot" onclick="appendToDisplay('.')">.</button>
+            </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.j"></script>
+</center>
+</body>
+</html>
