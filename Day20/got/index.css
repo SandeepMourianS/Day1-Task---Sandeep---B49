@@ -1,0 +1,29 @@
+p{
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid black;
+    box-shadow: 30px 40px 15px rgb(63, 62, 62);
+}
+
+.card{
+    margin-top: 5%;
+    width: 500px;
+    height: 60px;
+    border: 5px solid black;
+    background-color : lightgray;
+}
+
+.container{
+    border: 5px solid black;
+}
+
+h1{
+    background-color: black;
+    color: antiquewhite;
+    padding: 20px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+body{
+    background-image: linear-gradient(gray,lightgray);
+}
