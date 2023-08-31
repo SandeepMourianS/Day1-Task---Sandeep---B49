@@ -1,0 +1,131 @@
+img{
+    border-radius: 10px;
+    width: 100%;
+    max-width: 240px;
+    height: 200px;
+}
+
+.top{
+    display: flex;
+    background-color: rgb(44, 44, 44);
+    padding-top: 15px;
+    float: right;
+    align-content: center;
+    width: 100%;
+}
+
+h1{
+    padding-top: 50px;
+}
+
+.search{
+    margin-right: 300px;
+}
+
+input{
+    border-radius: 5px;
+    width: 400px;
+    height: 48px;
+    margin-left: 100px;
+}
+
+.end{
+    margin-top: 10px;
+    background-color: rgb(19, 18, 18);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.home{
+    margin-left: 90px;
+
+}
+
+.dashboard{
+    display: flex; 
+}
+
+a{
+    display: flex;
+    color: blanchedalmond;
+    margin-top: 10px;
+    margin-right: 40px;
+}
+
+.fa-brands{
+    margin-left: 10px;
+    color: white;
+}
+
+.top-cart{
+    width: 105px;
+    margin-right: 10px;
+} 
+
+.count{
+    border-radius: 5px;
+    padding: 5px;
+    height: 1px;
+    background-color: black;
+    color: white;
+}
+
+.Head{
+    text-align: center;
+    padding-block: 13px;
+    background-color: rgb(255, 166, 0);
+}
+
+.offer{
+    display: inline-block;
+    margin-right: 90px;
+    color: white;
+    background-color: red;
+}
+
+.card{
+    border-radius: 10px;
+    width: 240px;
+    height: 380px;
+    margin: 30px;
+    justify-content: center;
+    background-color: white;
+}
+
+.detail{
+    margin-left: 20px;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    width: 200px;
+    height: 320px;
+}
+
+.product{
+    /* display: block; */
+    padding: 5px;
+}
+
+.price{ 
+    /* display: block; */
+    padding: 5px;
+}
+
+button{
+    margin-bottom: 20px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 25px;
+    background-color: antiquewhite;
+}
+
+.card:hover{
+    filter: drop-shadow(0 0 3px #4c4c4daa);
+} 
