@@ -1,0 +1,83 @@
+.card-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 20px;
+}
+
+h1{
+  color: burlywood;
+}
+
+.container{
+  background-color: rgb(200, 255, 0);
+  width: 600px;
+  height: 200px;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.todo-container{
+  background-color: aliceblue;
+  min-height: 800px;
+  padding-top: 20px;
+}
+
+select{
+  background-color: rgb(172, 230, 189);
+}
+
+.card{
+  margin: 20px;
+  text-align: start;
+  height: 200px;
+  padding: 10px;
+  background-color: rgb(211, 250, 253);
+}
+
+.des{
+  margin: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.tit{
+  margin: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.stat{
+  margin: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.btn-primary{
+  margin-top: 19px;
+}
+
+/* .not{
+  background-color: green;
+  color: blue;
+} */
+
+.delete-btn{
+  margin-top: 30px;
+  margin-left: 120px;
+  width: 100px;
+  align-content: end;
+}
+
+.edit-btn{
+  color: aliceblue;
+  margin-top: 30px;
+  margin-left: 5px;
+  width: 100px;
+  align-content: end;
+}
+
+.title{
+  margin: 10px;
+}
+
+.description{
+  margin: 10px;
+}
