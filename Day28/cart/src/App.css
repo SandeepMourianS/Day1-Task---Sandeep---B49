@@ -1,0 +1,53 @@
+.card{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  margin: 10px;
+  padding: 20px;
+  max-width: 700px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.sub-total{
+  margin-left: 470px;
+}
+
+.checkout{
+  background-color: rgb(164, 204, 231);
+}
+
+.total{
+  margin-left: 450px;
+  padding: 10px;
+}
+
+.card:hover{
+  background-color: rgb(245, 244, 244);
+}
+
+img{
+  width: 100px;
+  padding: 10px;
+}
+
+h1{
+  margin-left: 470px;
+}
+
+.btn-primary{
+  margin-top: 40px;
+}
+
+.detail{
+  width: 300px;
+}
+
+input{
+  width: 20px;
+}
+
+.container{
+  padding: 20px;
+  margin-left: 350px;
+  justify-content: center;
+}
