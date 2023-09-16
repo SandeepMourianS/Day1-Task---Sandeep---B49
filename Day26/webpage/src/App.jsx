@@ -24,7 +24,7 @@ function App() {
           <img className="head" src=".\src\assets\head.webp"/>
           <div className='link'>
           <nav>
-            <Link className='all' to="/home">ALL</Link>
+            <Link className='all' to="/">ALL</Link>
             <Link className='all' to="/full_stack_development">FULL STACK DEVELOPMENT</Link>
             <Link className='all' to="/data_science">DATA SCIENCE</Link>
             <Link className='all' to="/cyber_security">CYBER SECURITY</Link>
@@ -33,7 +33,7 @@ function App() {
           </div>
           </div>
           <Routes>
-            <Route path="/home"  Component={All}/>
+            <Route path="/"  Component={All}/>
             <Route path="/full_stack_development"  Component={FullStack}/>
             <Route path="/data_science"  Component={DataScience}/>
             <Route path="/cyber_security" Component={CyberSecurity}/>
