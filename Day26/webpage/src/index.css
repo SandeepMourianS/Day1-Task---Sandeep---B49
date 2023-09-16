@@ -1,0 +1,29 @@
+.card{
+    font-family: 'Open Sans', sans-serif;
+    font-size: medium;
+    width: 250px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.all_details{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 600px;
+    margin-left: 15%;
+    cursor: pointer;
+}
+
+.des{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: x-small;
+    color: rgb(104, 101, 101);
+}
+
+.read{
+    color: rgb(3, 116, 3);
+    font-size: smaller;
+}
