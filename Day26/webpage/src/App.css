@@ -6,7 +6,7 @@
   font-family: 'Fredoka', sans-serif;  
 }
 
-p:hover::-ms-backdrop{
+p:hover{
   color: #2bd576;
 }
 

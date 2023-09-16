@@ -5,13 +5,16 @@ import FullStack from './FullStack'
 import DataScience from './DataScience'
 import Career from './Career'
 import CyberSecurity from './CyberSecurity'
+import logo from "./assets/Guvi-logo.webp";
+import head from "./assets/head.webp";
+
 
 function App() {
 
   return (
     <>
         <div className='topic'>
-          <span><img className='logo' src=".\src\assets\Guvi-logo.webp" /></span>
+          <span><img className='logo' src={logo} /></span>
           <p><a href="https://www.guvi.in/courses/?current_tab=myCourses">COURSES</a></p>
           <p>LIVE CLASSES</p>
           <p>PRACTICE</p>
@@ -21,7 +24,7 @@ function App() {
       <div>
         <Router>
           <div className='mid'>
-          <img className="head" src=".\src\assets\head.webp"/>
+          <img className="head" src={head}/>
           <div className='link'>
           <nav>
             <Link className='all' to="/">ALL</Link>
