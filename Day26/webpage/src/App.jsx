@@ -19,7 +19,7 @@ function App() {
           <p>LIVE CLASSES</p>
           <p>PRACTICE</p>
           <p>RESOURSES</p>
-          <p>OUR PROCUCT</p>
+          <p>OUR PROCUCT</p> 
         </div>
       <div>
         <Router>

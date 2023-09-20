@@ -1,0 +1,74 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Junior Level Books Introduction to Compute",
+      "author": "Amit Garg ",
+      "ISBN" : "978-93-5019-561-1",
+      "publicationDate" : "2011"
+    },
+    {
+      "id": 2,
+      "title": "Client Server Computing",
+      "author": "Lalit Kumar",
+      "ISBN" : " 978-93-8067-432-2",
+      "publicationDate" : "2007"
+    },
+    {
+      "id": 3,
+      "title": "Mobile Computing",
+      "author": "Vinay Kumar Singhal",
+      "ISBN" : "978-93-8067-432-3",
+      "publicationDate" : "2013"
+    },
+    {
+      "id": 4, 
+      "title": "Data Structure Using C ",
+      "author": "Sharad Kumar Verma",
+      "ISBN" : " 978-93-5163-389-1",
+      "publicationDate" : "2012"
+    },
+    {
+      "id": 5,
+      "title": "Computer Networks",
+      "author": "Sharad Kumar Verma",
+      "ISBN" : " 978-93-8067-432-2",
+      "publicationDate" : "2009"
+    },
+    {
+      "id": 6,
+      "title": "Publish News Letter",
+      "author": "Amit Garg",
+      "ISBN" : "978-93-5019-561-8",
+      "publicationDate" : "2014"
+    },
+    {
+      "id": 7,
+      "title": "Client Server Computing",
+      "author": "Sharad Kumar Verma",
+      "ISBN" : "",
+      "publicationDate" : ""
+    },
+    {
+      "id": 8,
+      "title": "json-server",
+      "author": "typicode",
+      "ISBN" : " 978-93-8067-432-2",
+      "publicationDate" : "2015"
+    },
+    {
+      "id": 9,
+      "title": "CBOT",
+      "author": "Gunjan Verma",
+      "ISBN" : " 978-93-5163-389-10",
+      "publicationDate" : "2011"
+    },
+    {
+      "id": 10,
+      "title": ".NET Framework & C#",
+      "author": "Sharad Kumar Verma",
+      "ISBN" : "978-93-5019-561-1",
+      "publicationDate" : "2010"
+    }
+  ]
+}
