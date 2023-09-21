@@ -15,7 +15,7 @@ function AllData() {
   const [showModal, setShowModal] = useState(false);
   const [itemToDeleteId, setItemToDeleteId] = useState(0);
 
-  const url = "http://localhost:4000/data";
+  const url = "https://650698ca3a38daf4803e8526.mockapi.io/task/data";
  
   useEffect(() => {
     axios.get(url)
@@ -39,7 +39,7 @@ function AllData() {
  
   const confirmDeleteHandler = () => {
     axios
-      .delete(`http://localhost:4000/data/${itemToDeleteId}`)
+      .delete(`https://650698ca3a38daf4803e8526.mockapi.io/task/data/${itemToDeleteId}`)
       .then((response) => {
         setAllData((previousState) => {
           return previousState.filter((_) => _.id !== itemToDeleteId);
@@ -59,7 +59,7 @@ function AllData() {
         confirmDeleteHandler={confirmDeleteHandler}
       ></DeleteData>
       <Row className="mt-2">
-        <Col md={{ span: 4, offset: 4 }}>
+        <Col md={{ span: 4, offset: 4 }} >
           <Button variant="primary" onClick={() => navigate("/add-data")}>
             Add New User
           </Button>
@@ -77,11 +77,10 @@ function AllData() {
                 <Card.Text>{item.address.suite}</Card.Text>
                 <Card.Text>{item.address.city}</Card.Text>
                 <Card.Text>{item.address.zipcode}</Card.Text>
-                <Card.Text>{item.phone}</Card.Text>
-                <Card.Text>{item.website}</Card.Text>
-                <Card.Text>{item.company.name}</Card.Text>
+                <Card.Text>PHONE NO : {item.phone}</Card.Text>
+                <Card.Text>WEBSITE : {item.website}</Card.Text>
+                <Card.Text> COMPANY : {item.company.name}</Card.Text>
                 <Card.Text>{item.company.catchPhrase}</Card.Text>
-
                 <Button
                   variant="primary"
                   onClick={() => navigate(`/update-data/${item.id}`)}

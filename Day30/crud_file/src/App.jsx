@@ -11,7 +11,7 @@ function App() {
   return (
     <Layout>
       <Routes>
-        <Route path="/" element={<AllData />} /> 
+        <Route path="/" element={<AllData/>}/> 
         <Route path="/add-data" element={<AddData />} /> 
         <Route path="/update-data/:id" element={<UpdateData />} /> 
       </Routes>

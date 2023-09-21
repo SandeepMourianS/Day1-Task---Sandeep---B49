@@ -22,7 +22,7 @@ function UpdateFruit() {
   const navigate = useNavigate();
  
   useEffect(() => {
-    axios.get(`http://localhost:4000/data/${id}`).then((response) => {
+    axios.get(`https://650698ca3a38daf4803e8526.mockapi.io/task/data/${id}`).then((response) => {
       name.current.value = response.data.name;
       username.current.value = response.data.username;
       email.current.value = response.data.email;

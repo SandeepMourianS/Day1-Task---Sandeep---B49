@@ -37,7 +37,7 @@ function AddData() {
           catchPhrase: companyCatch.current.value ,
         },
       };
-    axios.post("http://localhost:4000/data", payload).then(() => {
+    axios.post("https://650698ca3a38daf4803e8526.mockapi.io/task/data", payload).then(() => {
       navigate("/");
     });
   };
