@@ -1,12 +1,12 @@
-import Button from "react-bootstrap/Button";
+ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
- 
+
 function DeleteData(props) {
   return (
     <>
       <Modal
         show={props.showModal}
-        onHide={() => {
+         onHide={() => {
           props.hideDeleteModalHandler();
         }}
       >

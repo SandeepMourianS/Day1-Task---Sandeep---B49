@@ -15,7 +15,7 @@ function AllData() {
   const [showModal, setShowModal] = useState(false);
   const [itemToDeleteId, setItemToDeleteId] = useState(0);
 
-  const url = "https://650698ca3a38daf4803e8526.mockapi.io/task/data";
+  const url = "https://jsonplaceholder.typicode.com/users";
  
   useEffect(() => {
     axios.get(url)
@@ -39,7 +39,7 @@ function AllData() {
  
   const confirmDeleteHandler = () => {
     axios
-      .delete(`https://650698ca3a38daf4803e8526.mockapi.io/task/data/${itemToDeleteId}`)
+      .delete(`https://jsonplaceholder.typicode.com/users/${itemToDeleteId}`)
       .then((response) => {
         setAllData((previousState) => {
           return previousState.filter((_) => _.id !== itemToDeleteId);
@@ -55,7 +55,7 @@ function AllData() {
         showModal={showModal}
         hideDeleteModalHandler={hideDeleteModalHandler}
         title="Delete Confirmation"
-        body="Are you want delete this itme?"
+        body="Are you want delete this time?"
         confirmDeleteHandler={confirmDeleteHandler}
       ></DeleteData>
       <Row className="mt-2">

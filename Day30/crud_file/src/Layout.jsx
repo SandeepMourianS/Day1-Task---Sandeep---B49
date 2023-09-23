@@ -1,11 +1,12 @@
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
+import './layout.css'
  
 function Layout(props) {
   return (
     <div>
         <Navbar expand="lg" variant="dark" bg="success">
-          <Container>
+          <Container className='container'>
             <Navbar.Brand >User Info</Navbar.Brand>
           </Container>
         </Navbar>

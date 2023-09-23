@@ -3,6 +3,8 @@ import { useEffect, useRef } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import './layout.css'
+
  
 function UpdateFruit() {
     const name = useRef("");
@@ -22,7 +24,7 @@ function UpdateFruit() {
   const navigate = useNavigate();
  
   useEffect(() => {
-    axios.get(`https://650698ca3a38daf4803e8526.mockapi.io/task/data/${id}`).then((response) => {
+    axios.get(`https://jsonplaceholder.typicode.com/users/${id}`).then((response) => {
       name.current.value = response.data.name;
       username.current.value = response.data.username;
       email.current.value = response.data.email;
@@ -55,7 +57,7 @@ function UpdateFruit() {
           catchPhrase: companyCatch.current.value ,
         },
       };
-    axios.put(`http://localhost:4000/data/${id}`, payload).then((response) => {
+    axios.put(`https://650698ca3a38daf4803e8526.mockapi.io/task/data/${id}`, payload).then((response) => {
         navigate("/");
     })
   };
@@ -63,38 +65,38 @@ function UpdateFruit() {
   return (
     <>
       <legend>Update</legend>
-      <Form>
+      <Form className="container">
         <Form.Group className="mb-3" controlId="formName">
           <Form.Label>Name</Form.Label>
-          <Form.Control type="text" ref={name} />
+          <Form.Control placeholder="name" type="text" ref={name} />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formUsername">
           <Form.Label>Username</Form.Label>
-          <Form.Control type="text" ref={username} />
+          <Form.Control placeholder="username" type="text" ref={username} />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formEmail">
           <Form.Label>Email</Form.Label>
-          <Form.Control type="email" ref={email} />
+          <Form.Control placeholder="email" type="email" ref={email} />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formAddress">
           <Form.Label>Address</Form.Label>
-          <Form.Control type="text" ref={addressStreet} />
-          <Form.Control type="text" ref={addressSuite} />
-          <Form.Control type="text" ref={addressCity} />
-          <Form.Control type="number" ref={addressZipcode} />
+          <Form.Control placeholder="street" type="text" ref={addressStreet} />
+          <Form.Control placeholder="suite" type="text" ref={addressSuite} />
+          <Form.Control placeholder="city" type="text" ref={addressCity} />
+          <Form.Control placeholder="zipcode" ref={addressZipcode} />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formPhone">
           <Form.Label>Phone</Form.Label>
-          <Form.Control type="number" ref={phone} />
+          <Form.Control placeholder="phone" ref={phone} />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formWebsite">
           <Form.Label>Website</Form.Label>
-          <Form.Control type="text" ref={website} />
+          <Form.Control placeholder="website" type="text" ref={website} />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formCompany">
           <Form.Label>Company</Form.Label>
-          <Form.Control type="text" ref={companyName} />
-          <Form.Control type="text" ref={companyCatch} />
+          <Form.Control placeholder="company" type="text" ref={companyName} />
+          <Form.Control placeholder="about" type="text" ref={companyCatch} />
         </Form.Group>
         <Button variant="primary" type="button" onClick={updateFruitHandler}>
           Update
