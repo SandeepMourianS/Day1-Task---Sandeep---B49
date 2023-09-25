@@ -41,7 +41,7 @@ const Books = () => {
         pages: values.pages
       };  
       setDataSource([...dataSource, {payload}]);
-      // console.log("payload " , payload);
+      navigate("/");
     }
   });  
 
