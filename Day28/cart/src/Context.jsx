@@ -3,7 +3,7 @@ import { product } from './product';
 //create context
 const cartContext = createContext();
 
-function ContextProvider({ children }) { 
+function ContextProvider({ children }) {
   
   //value for cartitem initially
   const defaultCart = () =>{
@@ -11,8 +11,9 @@ function ContextProvider({ children }) {
     for (let i = 1 ; i < product.length + 1 ; i++){
       cart[i] = 0;
     }
-    return cart;
+    return cart;  
   }
+  
   //state to be update
   const [cartItems , setCartItems] = useState(defaultCart());
   //total amount
