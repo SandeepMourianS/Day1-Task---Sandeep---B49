@@ -5,38 +5,8 @@ app.use(express.json());
 const PORT = 3000;
 
 // Data storage (for demonstration purposes)
-const rooms = [
-  {
-    "id":  "1",
-  "seatsAvailable" : "10",
-  "amenities" : "AC, Wifi , double bed , balcony , heater",
-  "pricePerHour" : "1200"
-  },
-  {
-    "id" : "2",
-    "seatsAvailable" : "9",
-    "amenities": "Non-AC, No-Wifi , double bed ",
-    "pricePerHour" : "690"
-  }
-];
-const bookings = [
-  {
-    "id":"1",
-    "customerName" : "Raj kumar",
-    "date" : "27-09-2023",
-    "startTime" : "10:00 AM",
-    "endTime" : "9:00 PM",
-    "roomId" : "1"
-},
-{
-  "id": '2',
-  "ustomerName" : "Harish khan",
-  "date" : "01-10-2023",
-  "startTime" : "11:00 AM",
-  "endTime" : "10:00PM",
-  "roomId" : '2'
-}
-];
+const rooms = [];
+const bookings = [];
 
 // Create a room
 app.post('/createRoom', (req, res) => {
