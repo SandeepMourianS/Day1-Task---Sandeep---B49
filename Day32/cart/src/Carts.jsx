@@ -2,14 +2,12 @@ import React, { useEffect } from 'react';
 import './App.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { product } from './product';
-import { totalCartAmount, updateCart, sub, add, removeItem } from './OperationSlice';
+import { totalCartAmount , sub, add, removeItem } from './OperationSlice';
 
 
 function Carts() {
     const dispatch = useDispatch();
     const operation = useSelector(state => state.operation);
-    console.log(operation.cartItems);
-    console.log(operation.totalAmount);
       
     return (
         <div>
@@ -30,7 +28,7 @@ function Carts() {
                             <input
                                 type="text"
                                 value={operation.cartItems[product.id] || 0}
-                                onChange={(e) => dispatch(updateCart({ id: product.id, newAmount: Number(e.target.value) }))}
+                                // onChange={(e) => dispatch(updateCart({ id: product.id, newAmount: Number(e.target.value) }))}
                             />
 
 

@@ -15,7 +15,8 @@ export const operationSlice = createSlice({
   },
   reducers: {
     add: (state, action) => {
-      const { id } = action.payload;
+      const  id  = action.payload;
+      console.log(id);
       return { 
           ...state,
           cartItems : {
@@ -25,7 +26,7 @@ export const operationSlice = createSlice({
       };
     },
     sub: (state, action) => {
-      const { id } = action.payload;
+      const  id  = action.payload;
       return {
         ...state,
         cartItems: {
@@ -47,18 +48,19 @@ export const operationSlice = createSlice({
         totalAmount,
       };
     },
-    updateCart: (state, action) => {
-      const { id, newAmount } = action.payload;
-      return {
-        ...state,
-        cartItems: {
-          ...state.cartItems,
-          [id]: newAmount,
-        },
-      };
-    },
+    // updateCart: (state, action) => {
+    //   const { id, newAmount } = action.payload;
+    //   console.log("id" , id);
+    //   return {
+    //     ...state,
+    //     cartItems: {
+    //       ...state.cartItems,
+    //       [id]: newAmount,
+    //     },
+    //   };
+    // },
     removeItem: (state, action) => {
-      const { id } = action.payload;
+      const  id  = action.payload;
       const item = product.find((item) => item.id === id);
       if (item) {
         return {
