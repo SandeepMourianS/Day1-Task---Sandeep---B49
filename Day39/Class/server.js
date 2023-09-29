@@ -17,6 +17,7 @@ mongoose.connect(DB_URL)
 .then(()=> console.log('Connected to Mongodb'))
 .catch((err)=> console.log("Couldn't run the server", err))
 
+//create mentor
 app.post("/mentor" , async(req,res) => {
     try {
         const mentor = new Mentor(req.body);
@@ -26,7 +27,7 @@ app.post("/mentor" , async(req,res) => {
         res.status(400).send(error.message);
     }
 });
-
+//create student
 app.post("/student", async (req, res) => {
     try {
       const student = new Student(req.body);
@@ -36,7 +37,7 @@ app.post("/student", async (req, res) => {
       res.status(400).send(error);
     }
 });
-
+//API to Assign a student to Mentor
 app.post("/mentor/:mentorId/assign", async (req, res) => {
     try {
       const mentor = await Mentor.findById(req.params.mentorId);
@@ -57,7 +58,7 @@ app.post("/mentor/:mentorId/assign", async (req, res) => {
       res.status(400).send(error);
     }
 });
-
+// API to Assign or Change Mentor for particular Student
 app.put("/student/:studentId/assignMentor/:mentorId", async (req, res) => {
     try {
       const mentor = await Mentor.findById(req.params.mentorId);
@@ -74,7 +75,7 @@ app.put("/student/:studentId/assignMentor/:mentorId", async (req, res) => {
       res.status(400).send(error);
     }
 });
-
+//API to show all students for a particular mentor
 app.get("/mentor/:mentorId/students", async (req, res) => {
     try {
       const mentor = await Mentor.findById(req.params.mentorId).populate(
@@ -84,6 +85,17 @@ app.get("/mentor/:mentorId/students", async (req, res) => {
     } catch (error) {
       res.status(400).send(error);
     }
+});
+//API to show the previously assigned mentor for a particular student.
+app.get("/student/:studentId/pMentor", async (req, res) => {
+  try {
+    const student = await Student.findById(req.params.studentId).populate(
+      "pMentor"
+    );
+    res.send(student);
+  } catch (error) {
+    res.status(400).send(error);
+  }
 });
 
 app.listen(PORT, ()=> {
