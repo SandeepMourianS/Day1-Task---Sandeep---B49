@@ -12,32 +12,14 @@ export const operationSlice = createSlice({
     cartItems: defaultCart,
     totalAmount: 0,
   },
-  reducers: {
-    add: (state, action) => {
-      const  id  = action.payload;
-      return { 
-          ...state,
-          cartItems : {
-            ...state.cartItems,
-            [id]: state.cartItems[id] + 1
-         },
-      };
-    },
-    sub: (state, action) => {
-      const  id  = action.payload;
-      return {
-        ...state,
-        cartItems: {
-          ...state.cartItems,
-          [id]: state.cartItems[id] - 1, 
-        },
-      };
-    },    
+  reducers: {  
     totalCartAmount: (state, action) => {
       let totalAmount = 0;
       for (let item in state.cartItems) {
+        console.log(state.cartItems[item]);
         if (state.cartItems[item] > 0) {
           let itemInfo = product.find((product) => product.id === Number(item));
+          console.log(itemInfo);
           totalAmount += state.cartItems[item] * itemInfo.price;
         }
       }
@@ -77,8 +59,6 @@ export const operationSlice = createSlice({
 export const {
   totalCartAmount,
   updateCart,
-  sub,
-  add,
   removeItem,
 } = operationSlice.actions;
 

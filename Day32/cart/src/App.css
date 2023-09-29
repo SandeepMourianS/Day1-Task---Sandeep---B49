@@ -3,21 +3,35 @@
   display: flex;
   margin: 10px;
   padding: 20px;
-  max-width: 700px;
+  /* width: 800px; */
   background-color: white;
   border-radius: 10px;
 }
 
+.fa-truck-fast{
+  color: black;
+}
+
 .sub-total{
-  margin-left: 470px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 5px;
+  margin-left: 10px;
+  justify-content: end;
+  background-color: rgb(27, 235, 27);
+  color: #FFFFFF;
 }
 
 .checkout{
-  background-color: rgb(164, 204, 231);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  margin: 20px;
+  background-color: rgb(252, 254, 255);
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .total{
-  margin-left: 450px;
+  margin-left: 550px;
   padding: 10px;
 }
 
@@ -26,28 +40,96 @@
 }
 
 img{
-  width: 100px;
+  width: 40px;
+  height: 40px;
   padding: 10px;
 }
 
-h1{
-  margin-left: 470px;
+.top{
+  display: flex;
+  /* background-color: rgb(44, 44, 44); */
+  padding: 15px;
+  align-content: center;
 }
 
-.btn-primary{
-  margin-top: 40px;
+.dashboard{
+  display: flex; 
 }
 
-.detail{
-  width: 300px;
-}
-
-input{
+.fa-user{
   width: 20px;
 }
 
+a{
+  display: flex;
+  color: rgb(248, 124, 0);
+  margin-top: 10px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+a:hover{
+  color: #FF9A5A;
+}
+
+
+h2{
+  text-align: center;
+  margin-left: 250px;
+}
+
+.detail{
+  width: 600px;
+}
+
+button {
+  margin-left: 100px;
+  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+button:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+button:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+input{
+  background-color: #e2dfdffa;
+  border: 1px transparent ;
+  text-align: center;
+  width: 40px;
+  height: 20px;
+}
+
+.end{
+  margin-left: 500px;
+}
+
 .container{
-  padding: 20px;
-  margin-left: 350px;
-  justify-content: center;
+  border-radius: 20px;
+  width: 1000px;
+  padding: 40px;
+  margin-left: 14%;
+  margin-bottom: 10%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
