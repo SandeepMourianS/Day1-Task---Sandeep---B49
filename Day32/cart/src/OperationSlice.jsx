@@ -6,13 +6,14 @@ const defaultCart = {};
     defaultCart[i] = 0;
 }
 
+//Created slice using create slice
 export const operationSlice = createSlice({
   name: 'operation',
-  initialState: {
+  initialState: { //State
     cartItems: defaultCart,
     totalAmount: 0,
   },
-  reducers: {  
+  reducers: {  //reducer is created
     totalCartAmount: (state, action) => {
       let totalAmount = 0;
       for (let item in state.cartItems) {
@@ -28,7 +29,7 @@ export const operationSlice = createSlice({
         totalAmount
       };
     },
-    updateCart: (state, action) => {
+    updateCart: (state, action) => {  //update the cart
       const { id, newAmount } = action.payload;
       console.log("id" , id);
       return {
@@ -39,7 +40,7 @@ export const operationSlice = createSlice({
         },
       };
     },
-    removeItem: (state, action) => {
+    removeItem: (state, action) => { //remove the cart
       const  id  = action.payload;
       const item = product.find((item) => item.id === id);
       if (item) {
