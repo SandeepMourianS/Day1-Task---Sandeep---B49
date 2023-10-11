@@ -1,4 +1,4 @@
-import express from 'express';
+const express = require('express');
 import cors from 'cors';
 import mongoose from "mongoose";
 import morgan from 'morgan';
@@ -12,15 +12,14 @@ app.use(cors());
 app.use(morgan('tiny'));
 app.disable('x-powered-by'); // less hackers know about our stack
 
-
 const port = 8080;
 
 const DB_URL = "mongodb+srv://sandeepmourian10799:sandeep107@auth.9zcssjn.mongodb.net/?retryWrites=true&w=majority";
-mongoose.set('strictQuery', true)
+mongoose.set('strictQuery', true);
 
 mongoose.connect(DB_URL) 
 .then(()=> console.log('Connected to Mongodb'))
-.catch((err)=> console.log("Couldn't run the server", err))
+.catch((err)=> console.log("Couldn't run the server", err));
 
 /** HTTP GET Request */
 app.get('/', (req, res) => {
@@ -28,11 +27,10 @@ app.get('/', (req, res) => {
 });
 
 /** api routes */
-app.use('/api', router)
+app.use('/api', router);
 
 
 /** start server only when we have valid connection */
 app.listen(port, () => {
     console.log(`Server connected to http://localhost:${port}`);
-})
-
+});
