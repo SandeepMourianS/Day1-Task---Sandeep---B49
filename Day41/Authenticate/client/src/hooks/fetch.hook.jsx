@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { getUsername } from '../helper/helper'
 // import 'dotenv/config';
 
-const REACT_APP_SERVER_DOMAIN="http://localhost:8080";
+const REACT_APP_SERVER_DOMAIN="https://nodetask5-b4ej.onrender.com";
 
 axios.defaults.baseURL = REACT_APP_SERVER_DOMAIN;
 
