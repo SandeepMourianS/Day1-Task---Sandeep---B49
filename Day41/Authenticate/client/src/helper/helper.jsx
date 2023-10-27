@@ -47,9 +47,9 @@ export async function registerUser(credentials){
             await axios.post('/api/registerMail', { username, userEmail : email, text : msg})
         }
 
-        return Promise.resolve(msg)
+        return Promise.resolve(msg);
     } catch (error) {
-        return Promise.reject({ error })
+        return Promise.reject({ error });
     }
 }
 
