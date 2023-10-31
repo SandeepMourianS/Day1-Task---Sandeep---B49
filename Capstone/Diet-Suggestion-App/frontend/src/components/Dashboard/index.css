@@ -1,0 +1,17 @@
+Menu{
+    font-family: 'PT Sans', sans-serif;
+}
+
+.container{
+    background-color: white;
+    padding: 30px;
+}
+
+.title{
+    font-size:xx-large;
+    color: rgb(68, 66, 66);
+}
+
+.end{
+    background-color: black;
+}

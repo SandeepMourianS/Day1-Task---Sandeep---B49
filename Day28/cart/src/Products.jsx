@@ -24,7 +24,7 @@ export const Products = (props) => {
             <button onClick={()=>sub(id)}>-</button>
             
             <input type="text" 
-            value={cartItems[id]} 
+            value={cartItems[id]}  
             onChange={(e) => updateCart(Number(e.target.value))}/>
             
             <button onClick={()=>add(id)}>+</button>

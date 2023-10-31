@@ -1,0 +1,85 @@
+ .home-container{
+    align-self: center;
+    text-align: center;
+    background-color: white;
+    padding: 40px;
+    font-family: 'Jost', sans-serif;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    backdrop-filter: blur(10px); 
+    border-radius: 20px;
+    margin-left: 400px;
+}
+
+.register-container{
+    text-align: center;
+    background-color: white;
+    padding: 40px;
+    padding-left: 20px;
+    font-family: 'Jost', sans-serif;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    backdrop-filter: blur(10px); 
+    border-radius: 20px;
+    margin-left: 400px;
+}
+
+.login-container{
+    text-align: center;
+    background-color: white;
+    padding: 40px;
+    width: 500px;
+    padding-left: 20px;
+    font-family: 'Jost', sans-serif;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    backdrop-filter: blur(10px); 
+    border-radius: 20px;
+    margin-left: 400px;
+}
+
+.login-button{
+    margin: 10px;
+    color: white;
+}
+
+input{
+    width: 50px;
+}
+
+.register-button{
+    margin: 10px;
+}
+
+input{
+    margin: 10px;
+}
+
+.home-button{
+    margin: 20px;
+}
+
+.cards{
+    align-content: center;
+    text-align: center;
+}
+
+.card{
+    padding: 20px;
+    font-family: 'Jost', sans-serif;
+    background-color: rgb(255 255 255 / 0.3);
+    backdrop-filter: blur(10px); 
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.plan-container{
+    text-align: center;
+    margin-left: 60px;
+}
+
+.plan{
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+}
+
+.plan-button{
+    display: flex;
+}
