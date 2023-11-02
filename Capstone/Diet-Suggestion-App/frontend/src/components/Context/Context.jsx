@@ -1,21 +1,22 @@
-import React, { createContext } from 'react'
-import { maintain } from '../../Diet/diet';
+import React, { createContext , useState } from 'react'
+import { maintain } from '../Diet/diet';
 
 const dietContext = createContext();
 
 function ContextProvider( {children} ) {
 
-    const defaultDiet = () =>{
-        const diet = {};
-        for (let i = 1 ; i < maintain.length + 1 ; i++){
-          diet[i] = 0;
-        }
-        return diet;  
+  const defaultDiet = () =>{
+    const diet = {};
+    for (let i = 1 ; i < value.length + 1 ; i++){
+      diet[i] = 0;
     }
-
-  //state to be update
+    return diet;  
+}
+  //states
+  const [value, setValue] = useState(maintain);
   const [dietItems , setDietItems] = useState(defaultDiet());
-  //total amount
+
+  //total calories
   const totalDietAmount = () =>{
     let totalAmount = 0;
     for (let item in dietItems) {
@@ -26,10 +27,7 @@ function ContextProvider( {children} ) {
     }
     return totalAmount;
   } 
-  //uncheck
-  const sub = (id) => {
-    setDietItems((prev) => ({...prev, [id] : prev[id] - 1}));
-    }
+
   
   //checked
   const add = (id) => {
@@ -37,7 +35,7 @@ function ContextProvider( {children} ) {
   }
 
   return (
-    <dietContext.Provider value={{dietItems, add, sub, totalDietAmount}}>
+    <dietContext.Provider value={{ dietItems, add, totalDietAmount , setDietItems , setValue, value}}>
       {children}
     </dietContext.Provider>
   )

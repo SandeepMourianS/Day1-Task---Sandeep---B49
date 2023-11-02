@@ -20,11 +20,13 @@ app.use(bodyParser.json());
 
 const DB_URL = "mongodb+srv://sandeepmourian10799:sandeep107@cluster0.bi7ujnf.mongodb.net/?retryWrites=true&w=majority"
 
+//mongodb connection
 mongoose
   .connect(DB_URL, {})
   .then(() => console.log("Connected to MongoDB"))
   .catch((err) => console.log("Could not connect to MongoDB", err));
 
+//api for register
 app.post("/api/register", async (req, res) => {
     const { username, email, password } = req.body;
   
@@ -43,6 +45,7 @@ app.post("/api/register", async (req, res) => {
     }
 });
 
+//api for login
 app.post("/api/login", async (req, res) => {
     const { username, password } = req.body;
   
@@ -50,13 +53,14 @@ app.post("/api/login", async (req, res) => {
   
     if (!user) {
       return res
-        .status(401)
+        .status(alert("User not found"))
         .json({ message: "Authentication Failed! User does not exists." });
     }
   
     const passwordMatch = await bcrypt.compare(password, user.password);
   
     if (!passwordMatch) {
+      alert("Password incorrect")
       return res
         .status(401)
         .json({ message: "Authentication Failed! Password does not match." });

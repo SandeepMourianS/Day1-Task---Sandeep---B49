@@ -13,6 +13,7 @@ import './index.css'
 
 function Dashboard({setToken}) {
 
+  //logout to remove the token
   const logout = () => {
     localStorage.removeItem('token');
     setToken('');
@@ -20,6 +21,7 @@ function Dashboard({setToken}) {
   }
 
   return (
+    //sidebar
     <div style={{ display: "flex"}}>
       <Sidebar className="app">
         <Menu>
@@ -35,7 +37,7 @@ function Dashboard({setToken}) {
 
           <MenuItem 
           icon={<MenuRoundedIcon />} 
-          component={<Link to="/plan" className="link" />}>
+          component={<Link to="/plans" className="link" />}>
             Plans
           </MenuItem>
 
@@ -47,7 +49,7 @@ function Dashboard({setToken}) {
 
         </Menu>
       </Sidebar>
-
+  
       <div className='container' component={Paper}>
           <Headers/>
           <div className='sub-container'>

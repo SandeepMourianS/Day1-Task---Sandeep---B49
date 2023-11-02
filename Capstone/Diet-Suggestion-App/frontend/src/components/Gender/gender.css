@@ -1,0 +1,25 @@
+.gcards{
+    display: flex;
+    align-content: center;
+    text-align: center;
+}
+
+.gcard{
+    width: 130px;
+    height: 100px;
+    margin: 50px;
+    padding: 20px;
+    font-family: 'Jost', sans-serif;
+    background-color: rgb(255 255 255 / 0.3); 
+    backdrop-filter: blur(10px);  
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.gcontainer{
+    text-align: center;
+    border-radius: 20px;
+    margin-left: 400px;
+    background-color: white;
+    padding: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
