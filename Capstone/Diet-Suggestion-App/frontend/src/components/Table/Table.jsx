@@ -25,7 +25,7 @@ function MyTable() {
   return (
     <TableContainer className='table-container'>
       <Table sx={{ width: 700 }} aria-label="simple table">
-        <TableHead>
+        <TableHead className='head'>
           <TableRow>
             <TableCell align="center"><b>Food Name</b></TableCell>
             <TableCell align="center"><b>Calorie Intake</b></TableCell>
