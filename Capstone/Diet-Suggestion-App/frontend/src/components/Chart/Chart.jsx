@@ -5,11 +5,13 @@ import { dietContext } from '../Context/Context';
 
 function Chart() {
 
-  const { totalDietAmount } = useContext(dietContext);
+  const { totalDietAmount , cal } = useContext(dietContext);
 
   const total = totalDietAmount();
 
-  const goal = 2366;
+  // const goal = 2366;
+
+  const goal = cal;
 
 
   return (

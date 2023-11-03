@@ -1,4 +1,4 @@
-import React, {useState} from 'react' 
+import React, {useContext, useState} from 'react' 
 import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import GridViewRoundedIcon from "@mui/icons-material/GridViewRounded";
@@ -10,8 +10,11 @@ import Headers from '../Header/Headers';
 import MyTable from '../Table/Table';
 import Paper from '@mui/material/Paper';
 import './index.css'
+// import { dietContext } from '../Context/Context';
 
 function Dashboard({setToken}) {
+
+  // const { calories } = useContext(dietContext);
 
   //logout to remove the token
   const logout = () => {

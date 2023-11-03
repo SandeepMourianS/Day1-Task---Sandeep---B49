@@ -18,7 +18,7 @@ app.use(cors(corsOptions));
 
 app.use(bodyParser.json());
 
-const DB_URL = "mongodb+srv://sandeepmourian10799:sandeep107@cluster0.bi7ujnf.mongodb.net/?retryWrites=true&w=majority"
+const DB_URL = "mongodb+srv://sandeepmourian10799:sandeep107@cluster0.bi7ujnf.mongodb.net/?retryWrites=true&w=majority";
 
 //mongodb connection
 mongoose

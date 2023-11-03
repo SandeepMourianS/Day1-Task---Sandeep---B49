@@ -1,8 +1,30 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useContext } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 import './plan.css'
+import { dietContext } from '../Context/Context'
 
 function Plan() {
+
+    const navigate = useNavigate();
+
+    const { setCal } = useContext(dietContext);
+
+    const handleCut = () => { 
+        setCal(1972);
+        navigate('/dashboard');
+    }
+
+    const handleMaintain = () => { 
+        setCal(2366);
+        navigate('/dashboard');
+    }
+
+    const handleBulk = () => { 
+        setCal(3217);
+        navigate('/dashboard');
+    }
+    
+
   return (
     
     <div className='whole'>
@@ -19,7 +41,7 @@ function Plan() {
                             <p className="card-text">Like your current weight?</p>
                             <p className="card-text">Burn fat and gain muscle</p>
                             <p className="card-text">Stay lean</p>
-                            <button>Unavailable</button>
+                            <button onClick={handleCut}>Select</button>
                         </div>
                     </div>
 
@@ -30,7 +52,7 @@ function Plan() {
                             <p className="card-text">Want to lose fat?</p>
                             <p className="card-text">Get lean in 12 weeks</p>
                             <p className="card-text">Feel healthier</p>
-                            <button><Link to="/dashboard">Select</Link></button>
+                            <button onClick={handleMaintain}>Select</button>
                         </div>
                     </div>
 
@@ -41,7 +63,7 @@ function Plan() {
                             <p className="card-text">Want to gain muscle?</p>
                             <p className="card-text">Get bigger and stronger</p>
                             <p className="card-text">Eat more</p>
-                            <button>Unavailable</button>
+                            <button onClick={handleBulk}>Select</button>
                         </div>
                     </div>
             

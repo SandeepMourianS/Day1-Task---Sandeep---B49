@@ -5,11 +5,12 @@ import { dietContext } from '../Context/Context';
 
 function Headers() {
 
-    const { totalDietAmount } = useContext(dietContext);
+    const { totalDietAmount , cal } = useContext(dietContext);
 
     const total = totalDietAmount();
 
-    const goal = 2366;
+    // const goal = 2366;
+    const goal = cal;
     
   return (
     <div>

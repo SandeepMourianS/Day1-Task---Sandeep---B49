@@ -15,6 +15,7 @@ function ContextProvider( {children} ) {
   //states
   const [value, setValue] = useState(maintain);
   const [dietItems , setDietItems] = useState(defaultDiet());
+  const [cal , setCal] = useState();
 
   //total calories
   const totalDietAmount = () =>{
@@ -35,7 +36,7 @@ function ContextProvider( {children} ) {
   }
 
   return (
-    <dietContext.Provider value={{ dietItems, add, totalDietAmount , setDietItems , setValue, value}}>
+    <dietContext.Provider value={{ cal, setCal ,dietItems, add, totalDietAmount , setDietItems , setValue, value}}>
       {children}
     </dietContext.Provider>
   )
