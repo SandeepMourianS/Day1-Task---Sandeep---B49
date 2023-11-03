@@ -26,6 +26,10 @@ mongoose
   .then(() => console.log("Connected to MongoDB"))
   .catch((err) => console.log("Could not connect to MongoDB", err));
 
+app.get('/', (req, res) => {
+    res.status(201).json("Home GET Request");
+});
+
 //api for register
 app.post("/api/register", async (req, res) => {
     const { username, email, password } = req.body;
