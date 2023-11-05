@@ -10,11 +10,8 @@ import Headers from '../Header/Headers';
 import MyTable from '../Table/Table';
 import Paper from '@mui/material/Paper';
 import './index.css'
-// import { dietContext } from '../Context/Context';
 
 function Dashboard({setToken}) {
-
-  // const { calories } = useContext(dietContext);
 
   //logout to remove the token
   const logout = () => {
@@ -54,11 +51,17 @@ function Dashboard({setToken}) {
       </Sidebar>
   
       <div className='container' component={Paper}>
+
           <Headers/>
+
           <div className='sub-container'>
+
             <MyTable></MyTable>
+
             <span className='span-chart'><Chart /></span>
+
           </div>
+          
       </div>
       
     </div>

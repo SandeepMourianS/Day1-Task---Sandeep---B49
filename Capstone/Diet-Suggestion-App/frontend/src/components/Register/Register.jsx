@@ -25,7 +25,7 @@ const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-        const response = await axios.post('http://localhost:4000/api/register', formData);
+        const response = await axios.post('https://capstone-jvhc.onrender.com/api/register', formData);
         console.log(response.data);
         navigate('/login');
     } catch (error) {
@@ -33,7 +33,7 @@ const handleSubmit = async (e) => {
     }
 
     try {
-      const response = await axios.get('http://localhost:4000/api/diet', formData);
+      const response = await axios.get('https://capstone-jvhc.onrender.com/api/diet', formData);
       console.log(response.data);
       navigate('/login');
   } catch (error) {
