@@ -27,7 +27,7 @@ mongoose
   .catch((err) => console.log("Could not connect to MongoDB", err));
 
 app.get('/', (req, res) => {
-    res.status(201).json("Home GET Request");
+    res.status(201).json("Server is running");
 });
 
 //api for register
