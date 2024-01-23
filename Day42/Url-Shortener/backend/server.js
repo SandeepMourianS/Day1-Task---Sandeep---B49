@@ -11,7 +11,7 @@ require("dotenv").config();
 const app = express()
 app.use(
   cors({
-    origin: 'http://localhost:4000',
+    origin: 'http://localhost:5000',
   })
 );
 app.use(express.json());
