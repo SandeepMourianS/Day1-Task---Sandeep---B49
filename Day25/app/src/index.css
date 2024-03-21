@@ -1,4 +1,4 @@
-.card-container{
+.cardcontainer{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 20px;
@@ -9,14 +9,14 @@ h1{
 }
 
 .container{
-  background-color: rgb(200, 255, 0);
+  /* background-color: rgb(200, 255, 0); */
   width: 600px;
   height: 200px;
   margin-top: 20px;
   padding-top: 20px;
 }
 
-.todo-container{
+.todocontainer{
   background-color: aliceblue;
   min-height: 800px;
   padding-top: 20px;
@@ -61,7 +61,7 @@ select{
 
 .delete-btn{
   margin-top: 30px;
-  margin-left: 120px;
+  margin-left: 10px;
   width: 100px;
   align-content: end;
 }
@@ -69,9 +69,16 @@ select{
 .edit-btn{
   color: aliceblue;
   margin-top: 30px;
-  margin-left: 5px;
+  margin-left: 30px;
   width: 100px;
-  align-content: end;
+  /* align-content: end; */
+}
+
+.filter{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  float: right;
+  margin-right: 20px;
+
 }
 
 .title{

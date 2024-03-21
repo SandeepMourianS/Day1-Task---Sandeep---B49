@@ -9,6 +9,7 @@ export const TodoForm = () => {
     const [description,setDescription] = useState("");
     const [editTaskId , setEditTaskId] = useState(null);
     const [status, setStatus] = useState("");
+    const [filter, setFilter] = useState("");
 
     //get title
     const handleChange1 = (event) => {
@@ -64,6 +65,25 @@ export const TodoForm = () => {
         setDescription("");
         setEditTaskId(null);
     }
+
+
+    const handleFilter = () => {
+        const value = event.target.value;
+        setFilter(value);
+
+        if(filter === "Complete") {
+
+            const complete = todoTask.filter((task)=>
+                task.status === filter
+            );
+
+            console.log(complete);
+
+
+        }        
+
+    }
+
     //option selected
     const handleSelect = (todo) => {
         const value = event.target.value  
@@ -80,8 +100,8 @@ export const TodoForm = () => {
 
   return (
     <>
-    <div className='todo-container'> 
-        <h1>TODO LIST</h1>
+    <div className='todocontainer'> 
+        <h1>MY TODO</h1>
         <div className='container'>
             <div className='title'>
                 <input type="text"
@@ -98,6 +118,7 @@ export const TodoForm = () => {
                 value={description} 
                 onChange={handleChange2} required/>
             </div>
+
             {/* if nothing to edit, the button remains add task if not, it is save */}
             {editTaskId === null ? ( 
                 <button className='btn btn-primary' type='submit' onClick={addTask}>Add Todo</button>
@@ -105,7 +126,16 @@ export const TodoForm = () => {
                 <button className='btn btn-primary' type='submit' onClick={saveEditedTask}>Save</button>
             )}
         </div> 
-        <div className='card-container'>
+
+
+        <div className='filter'>Status Filter : <select onChange={()=>handleFilter()} >
+                                        <option value={"All"} id='n'>All</option>
+                                <option value={"Not Complete"} id='n'>Not Completed</option>
+                                <option value={"Complete"} id='c'>Completed</option>
+                            </select>
+                        </div>
+
+        <div className='cardcontainer'>
             {todoTask.map((todo) => {
                 return (
                     <div className="card" key={todo.id}>
