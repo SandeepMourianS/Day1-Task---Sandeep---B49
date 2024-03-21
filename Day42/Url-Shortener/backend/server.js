@@ -9,11 +9,7 @@ const Customer = require("./models/Customer");
 require("dotenv").config();
 
 const app = express()
-app.use(
-  cors({
-    origin: 'http://localhost:5000',
-  })
-);
+app.use(cors());
 app.use(express.json());
 app.use(bodyParser.json());
 
@@ -24,7 +20,7 @@ mongoose.connect('mongodb+srv://sandeepmourian10799:sandeep107@auth.9zcssjn.mong
 
 app.use(express.urlencoded({ extended: false }))
 
-app.post("/api/register", async (req, res) => {
+app.post("/register", async (req, res) => {
   const { username, password } = req.body;
 
   const hashedPassword = await bcrypt.hash(password, 10);
