@@ -48,7 +48,7 @@ export default function Home() {
       .then((response) => {
         if (response.status === 200) {
           // Redirect to the homepage or perform any desired action
-          window.location.href = '/';
+          // window.location.href = '/';
         }
       }
 )
