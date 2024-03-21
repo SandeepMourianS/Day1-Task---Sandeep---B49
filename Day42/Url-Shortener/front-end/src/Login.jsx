@@ -22,7 +22,7 @@ const Login = ({setToken}) => {
         e.preventDefault();
 
         try {
-            const response = await axios.post('http://localhost:5000/api/login', formData);
+            const response = await axios.post('https://task-sandeep-b49-10.onrender.com/api/login', formData);
             const { token } = response.data;
             setToken(token); // Store the token in your app.js state
             localStorage.setItem('token', token);

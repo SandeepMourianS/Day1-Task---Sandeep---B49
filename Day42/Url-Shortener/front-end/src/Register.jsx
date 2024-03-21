@@ -17,7 +17,7 @@ const Register = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post('http://localhost:5000/register', formData);
+            const response = await axios.post('https://task-sandeep-b49-10.onrender.com/register', formData);
             console.log(response.data);
             navigate('/login');
         } catch (error) {

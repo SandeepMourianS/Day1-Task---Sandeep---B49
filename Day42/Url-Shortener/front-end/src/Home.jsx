@@ -8,7 +8,7 @@ export default function Home() {
 
         useEffect(() => {
         
-            fetch('http://localhost:5000')
+            fetch('https://task-sandeep-b49-10.onrender.com')
             .then((response) => response.json())
             .then((data) => setShortUrls(data));
         }, []);
@@ -19,7 +19,7 @@ export default function Home() {
           e.preventDefault();
       
           // Send a POST request to the server
-          fetch('http://localhost:5000/:shortUrl', {
+          fetch('https://task-sandeep-b49-10.onrender.com/:shortUrl', {
             method: 'DELETE'
           })
           .then((response) => {
@@ -38,7 +38,7 @@ export default function Home() {
     e.preventDefault();
 
     // Send a POST request to the server
-    fetch('http://localhost:5000/shortUrls', {
+    fetch('https://task-sandeep-b49-10.onrender.com/shortUrls', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
